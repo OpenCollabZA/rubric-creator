@@ -56,17 +56,12 @@ export class RubricActionButtonGroupComponent {
     const rubricName = this.rubric.name;
     if (this.rubric.components) {
         const rubric = [];
-
-      // tslint:disable-next-line:prefer-template
-        rubric.push("rubricID: "+ this.rubric.uuid);
-
         this.rubric.components.forEach(criteria => {
           const newCriteria = {
             description: '',
             name: '',
           };
           newCriteria['levels'] = [];
-
           // @ts-ignore
           newCriteria.description = criteria.description;
           // @ts-ignore
@@ -76,12 +71,11 @@ export class RubricActionButtonGroupComponent {
             const levelData = (({score, description, label}) => ({score, description, label}))(level);
             newCriteria['levels'].push(levelData);
           });
-
           // @ts-ignore
           rubric.push(newCriteria);
         });
         const blob = new Blob([JSON.stringify(rubric)], {type: 'application/json'});
-      // tslint:disable-next-line:prefer-template
+        // tslint:disable-next-line:prefer-template
         this.fileSaverService.save(blob, rubricName + '.json');
       }
 

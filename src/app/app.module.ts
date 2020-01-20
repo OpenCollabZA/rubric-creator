@@ -45,7 +45,8 @@ import { WindowRef } from './services/window-ref.service';
 import { NavigatorRef } from './services/navigator-ref.service';
 import { RubricActionButtonGroupComponent } from './components/rubric-action-button-group/rubric-action-button-group.component';
 import { DeleteRubricModalComponent } from './components/delete-rubric-modal/delete-rubric-modal.component';
-import { SearchInputComponent } from './components/search-input/search-input.component';
+
+import { FileSaverModule } from 'ngx-filesaver';
 
 @NgModule({
     bootstrap: [
@@ -76,7 +77,6 @@ import { SearchInputComponent } from './components/search-input/search-input.com
         CreateRubricButtonComponent,
         RubricActionButtonGroupComponent,
         DeleteRubricModalComponent,
-        SearchInputComponent,
     ],
     entryComponents: [
         DeleteRubricModalComponent,
@@ -88,6 +88,7 @@ import { SearchInputComponent } from './components/search-input/search-input.com
         FormsModule,
         RouterModule,
         HttpClientModule,
+        FileSaverModule,
         StoreModule.forRoot(
             { rubrics: rubricsReducer },
             { initialState: getInitialState }

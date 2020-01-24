@@ -28,7 +28,7 @@
     ],
     "arrow-return-shorthand": true,
     "await-promise": true,
-    "banana-in-box": true,
+    "template-banana-in-box": true,
     "binary-expression-operand-order": true,
     "callable-types": true,
     "class-name": true,
@@ -46,13 +46,13 @@
       ],
       "kebab-case"
     ],
-    "contextual-life-cycle": true,
+    "contextual-lifecycle": true,
     "curly": true,
     "cyclomatic-complexity": [
       true,
       20
     ],
-    "decorator-not-allowed": true,
+    "contextual-decorator": true,
     "deprecation": {
       "severity": "warning"
     },
@@ -134,7 +134,7 @@
     "newline-before-return": true,
     "no-angle-bracket-type-assertion": true,
     "no-arg": true,
-    "no-attribute-parameter-decorator": true,
+    "no-attribute-decorator": true,
     "no-consecutive-blank-lines": [
       true,
       1
@@ -252,7 +252,7 @@
         "grouped-imports": true
       }
     ],
-    "pipe-impure": true,
+    "no-pipe-impure": true,
     "pipe-naming": [
       "camelCase"
     ],
@@ -306,7 +306,7 @@
       true,
       "always"
     ],
-    "templates-no-negated-async": true,
+    "template-no-negated-async": true,
     "trailing-comma": [
       true,
       {
@@ -352,14 +352,14 @@
     ],
     "unified-signatures": true,
     "use-default-type-parameter": true,
-    "use-host-property-decorator": true,
-    "use-input-property-decorator": true,
+    "no-host-metadata-property": true,
+    "no-inputs-metadata-property": true,
     "use-isnan": true,
-    "use-life-cycle-interface": true,
-    "use-output-property-decorator": true,
+    "use-lifecycle-interface": true,
+    "no-outputs-metadata-property": true,
     "use-pipe-decorator": true,
     "use-pipe-transform-interface": true,
-    "use-view-encapsulation": true,
+    "use-component-view-encapsulation": true,
     "variable-name": [
       true,
       "check-format",

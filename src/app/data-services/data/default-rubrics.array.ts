@@ -1,7 +1,7 @@
 import { RubricInterface } from '../../object-interfaces/rubric.interface';
 
 export const defaultRubricsArray: Array<RubricInterface> = [
-    {
+  /**  {
         created_at: '2018-09-07 21:49:55',
         description: 'State Standards-based Narrative essay rubric for grades 6-8. Created by The Graide Network.',
         name: 'Narrative Essay Rubric (Middle School)',
@@ -54,7 +54,7 @@ export const defaultRubricsArray: Array<RubricInterface> = [
         description: 'State Standards-based persuasive essay rubric for grades 9-12. Created by The Graide Network.',
         name: 'Persuasive Essay Rubric (High School)',
         uuid: '5bcf872eadf9f5652a63de70',
-    },
+    }, **/
 ];
 
 export const defaultRubricIds = defaultRubricsArray.reduce(
